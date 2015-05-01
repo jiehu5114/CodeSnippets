@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>recursion</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)kl_recursionDisplayView:(UIView*)view andHeight:(NSInteger)height
+{
+    if(view==nil)
+    {
+        return;
+    }
+    NSLog(@"%@---%d",view,height);
+    for(UIView* v1 in view.subviews)
+    {
+        [self kl_recursionDisplayView:v1 andHeight:height+1];
+    }
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>472D2774-A293-4FCF-A29D-C7595729B641</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>My Code Snippet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

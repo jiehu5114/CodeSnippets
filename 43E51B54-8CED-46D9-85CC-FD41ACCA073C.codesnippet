@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>createCell</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>static NSString *CellIdentifier2 = @"kltextfieldcell";
+    
+    
+    KLUITextFieldCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier2];
+
+    
+    if(cell==nil)
+    {
+        cell = [[KLUITextFieldCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier2 Width:tableView.frame.size.width Height:CELLHEIGHT];//[[KLUITextFieldCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier2];
+        cell.delegateView  = self;
+    }
+    
+    
+
+    cell.imageAvatar.image = uimodel.image;
+    cell.labelNum.text = uimodel.number;
+    cell.index = indexPath.row;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>43E51B54-8CED-46D9-85CC-FD41ACCA073C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>My Code Snippet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
