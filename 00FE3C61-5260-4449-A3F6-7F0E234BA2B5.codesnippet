@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>autolayout</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSDictionary *viewsDic = @{@"_menuCollectionView":self.menuCollectionView,
+                               @"self":self,
+                               @"_seperateLine":self.seperateLine,
+                               @"_cancelButton":self.cancelButton,
+                               @"_pageControl":self.pageControl};
+    
+    NSDictionary *metrics  = @{@"menuCollectionViewHeight":[NSNumber numberWithDouble:self.pageViewHeight-kSeperateLineThick],
+                               @"seperateLineThick":[NSNumber numberWithDouble:kSeperateLineThick],
+                               @"cancelButtonHeight":[NSNumber numberWithDouble:kCancelButtonHeight]};
+    
+    NSString *vflH = @"H:|-0-[_menuCollectionView(==_cancelButton)]-0-|";
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:vflH
+                                                                 options:0
+                                                                 metrics:nil
+                                                                   views:viewsDic]];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>00FE3C61-5260-4449-A3F6-7F0E234BA2B5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>My Code Snippet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

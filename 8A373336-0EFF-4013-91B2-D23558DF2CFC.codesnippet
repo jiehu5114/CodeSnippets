@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>sqldelete</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    @synchronized(self) {
+        BOOL result = NO;
+        
+        NSString *sql = [NSString stringWithFormat:@"DELETE FROM %@ WHERE Jid = ?", kTbAccountUserInfo];
+        result = [_db executeUpdate:sql, jid.bareStr];
+        
+        return result;
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8A373336-0EFF-4013-91B2-D23558DF2CFC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>My Code Snippet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
