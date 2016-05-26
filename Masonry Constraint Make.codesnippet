@@ -3,19 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>cfcount</string>
+	<string>mas_make</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>CFGetRetainCount((__bridge CFTypeRef)&lt;#obj#&gt;)</string>
+	<string>[&lt;#view#&gt; mas_makeConstraints:^(MASConstraintMaker *make){
+    &lt;#code#&gt;
+}];
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>89418694-CE14-4C0F-A4E4-4D1A35557869</string>
+	<string>4A0A057B-8C17-43BB-BDBA-3A315A942EF8</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>My Code Snippet</string>
+	<string>Masonry Constraint Make</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
